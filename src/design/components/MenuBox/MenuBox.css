@@ -21,6 +21,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .menu-box .box ul li {
@@ -29,7 +30,8 @@
   justify-content: start;
   flex-direction: row-reverse;
   gap: 10px;
-  width: 100%;
+  width: 250px;
+  max-width: 100%;
   font-size: var(--font-size-20);
   font-weight: 500;
   color: var(--main-color-01);
@@ -38,6 +40,11 @@
   cursor: pointer;
   transition: var(--transition);
   /* flex-wrap: wrap; */
+}
+
+.menu-box .box ul li svg.trf {
+  margin-right: auto;
+  transition: var(--transition);
 }
 
 .menu-box .box ul li:hover {
@@ -49,12 +56,54 @@
 }
 
 .menu-box .box ul .info {
-  fill: var(--main-color-01);
+  width: 250px;
+  max-width: 100%;
+  transition: var(--transition);
 }
+
+
 
 .menu-box .box ul .info .box {
   all: unset;
+  display: none;
+}
 
+.menu-box .box ul .info.active .box {
+  display: block;
+}
+
+.menu-box .box ul .info.active li:nth-child(1) {
+  background-color: var(--main-color-01);
+  color: var(--font-color-01);
+}
+
+.menu-box .box ul .info.active li:nth-child(1) svg:first-child {
+  color: var(--font-color-01);
+  transform: rotate(-90deg);
+  fill: #fff;
+
+}
+
+.menu-box .box ul .info.active .box {
+  display: block;
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-box .box ul .info.active .box li {
+  background-color: var(--Primary-color-01);
+  color: var(--main-color-01);
+
+}
+
+.menu-box .box ul .info.active .box li span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--main-color-01);
 }
 
 .menu-box .box .logOut {

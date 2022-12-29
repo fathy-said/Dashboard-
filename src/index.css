@@ -14,7 +14,7 @@
   --Primary-color-01: #c0e9ff;
   --Primary-color-03: #237eae;
   --body-back: #ffff;
-  --transition: .3s;
+  --transition: linear .3s;
   --heading-size-01: 54px;
   --heading-size-02: 48px;
   --heading-size-03: 38px;
@@ -28,7 +28,6 @@
 * {
   font-family: 'Almarai', sans-serif;
   box-sizing: border-box !important;
-
 }
 
 body {
