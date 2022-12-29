@@ -1,0 +1,13 @@
+.detail-box {
+  padding: 20px !important;
+  box-sizing: border-box;
+}
+
+.detail-box .box {
+  background-color: var(--gray-color-03);
+  height: 2000px;
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--border-radius);
+
+}

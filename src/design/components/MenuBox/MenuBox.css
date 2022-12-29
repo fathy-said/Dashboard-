@@ -1,0 +1,104 @@
+.menu-box {
+  padding: 6px !important;
+  background-color: var(--Primary-color-02);
+}
+
+.menu-box .box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-box .box ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-box .box ul li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  gap: 10px;
+  width: 100%;
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--main-color-01);
+  padding: 13px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  /* flex-wrap: wrap; */
+}
+
+.menu-box .box ul li:hover {
+  background-color: var(--Primary-color-01);
+}
+
+.menu-box .box ul li svg {
+  fill: var(--main-color-01);
+}
+
+.menu-box .box ul .info {
+  fill: var(--main-color-01);
+}
+
+.menu-box .box ul .info .box {
+  all: unset;
+
+}
+
+.menu-box .box .logOut {
+  height: 300px;
+  max-width: 100%;
+  width: 100%;
+  padding-left: 20px;
+  color: var(--main-color-01);
+}
+
+.menu-box .box .logOut {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.menu-box .box .logOut button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  gap: 10px;
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--main-color-01);
+  padding: 13px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  width: 100%;
+  max-width: 100%;
+}
+
+.menu-box .box .logOut button:hover {
+  background-color: var(--Primary-color-01);
+}
+
+.menu-box .box .logOut span {
+
+  background-color: var(--Primary-color-03);
+  width: 100%;
+  height: 1px;
+}
