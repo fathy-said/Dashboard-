@@ -87,6 +87,8 @@
   color: var(--font-color-01);
 }
 
+
+
 .menu-box .box ul .info.active li:nth-child(1) svg:first-child {
   color: var(--font-color-01);
   transform: rotate(-90deg);
@@ -107,6 +109,11 @@
   background-color: var(--Primary-color-01);
   color: var(--main-color-01);
 
+}
+
+.menu-box .box ul .info.active li.active {
+  background-color: var(--main-color-02);
+  color: var(--main-color-01);
 }
 
 .menu-box .box ul .info.active .box li span {

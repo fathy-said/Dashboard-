@@ -25,6 +25,16 @@
   cursor: pointer;
 }
 
+.header .content .logo a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: var(--font-color-01);
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .header .content .logo .box {}
 
 .header .content .logo h5 {
@@ -166,4 +176,9 @@
     row-gap: 30px;
   }
 
+  .header .content .box-form input {
+
+    width: fit-content;
+
+  }
 }

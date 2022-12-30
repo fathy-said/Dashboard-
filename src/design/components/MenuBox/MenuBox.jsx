@@ -19,8 +19,9 @@ import { ReactComponent as Svgsign } from "../../assets/Icons/icon-24-sign out.s
 import { HiChevronLeft } from "react-icons/hi2";
 import { CgMenuRightAlt } from "react-icons/cg";
 
-const MenuBox = () => {
+const MenuBox = ({ setRegistration, registration }) => {
     const [dategate, setDategate] = useState(false);
+    const [merchant, setMerchant] = useState(false);
     const [menu, setMenu] = useState(false);
 
     return (
@@ -42,11 +43,50 @@ const MenuBox = () => {
                                 السوق
                                 <BoxSvg />
                             </li>
-                            <li>
-                                <HiChevronLeft className="trf" />
-                                المتاجر
-                                <MarkSvg />
-                            </li>
+
+                            <div
+                                className={
+                                    merchant == true ? "info active" : "info"
+                                }
+                            >
+                                <li
+                                    onClick={(e) => {
+                                        setMerchant(!merchant);
+                                    }}
+                                >
+                                    <HiChevronLeft className="trf" />
+                                    المتاجر
+                                    <MarkSvg />
+                                </li>
+                                <div className="box">
+                                    <li>
+                                        نشاط المتاجر
+                                        <span></span>
+                                    </li>
+                                    <li>
+                                        المتاجر
+                                        <span></span>
+                                    </li>
+                                    {registration === true ? (
+                                        <li
+                                            className="active"
+                                            onClick={() => {
+                                                setRegistration(!registration);
+                                            }}
+                                        >
+                                            حالة التسجيل <span></span>
+                                        </li>
+                                    ) : (
+                                        <li
+                                            onClick={() => {
+                                                setRegistration(!registration);
+                                            }}
+                                        >
+                                            حالة التسجيل <span></span>
+                                        </li>
+                                    )}
+                                </div>
+                            </div>
                             <li>
                                 <HiChevronLeft className="trf" />
                                 الباقات <Svgprice />

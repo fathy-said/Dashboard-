@@ -5,6 +5,7 @@ import { FaEnvelope, FaBell } from "react-icons/fa";
 import { GrHomeRounded } from "react-icons/gr";
 import { HiOutlineChevronDown } from "react-icons/hi2";
 import { AiOutlineSearch, AiOutlineHome } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => (
     <>
@@ -12,8 +13,10 @@ const Navbar = () => (
             <div className="content">
                 <div className="row ">
                     <div className="logo col-md-2">
-                        <AiOutlineHome />
-                        <h5>الموقع</h5>
+                        <Link to={"/"}>
+                            <AiOutlineHome />
+                            <h5>الموقع</h5>
+                        </Link>
                     </div>
                     <div className="user-detail col-8 col-md-3">
                         <div className="box-img">
