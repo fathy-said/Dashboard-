@@ -3,9 +3,8 @@
   box-sizing: border-box;
 }
 
-.detail-box .box {
+.detail-box .box-1 {
   background-color: var(--gray-color-03);
-  height: 2000px;
   width: 100%;
   padding: 20px;
   border-radius: var(--border-radius);
@@ -16,14 +15,15 @@
   gap: 50px;
 }
 
-.detail-box .box .box-header {
+.detail-box .box-1 .box-header {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
+  row-gap: 20px;
 }
 
-.detail-box .box .statistic-store {
+.detail-box .box-1 .statistic-store {
   background-color: #f4f5f7;
   width: 100%;
   height: 100%;
@@ -36,7 +36,7 @@
   gap: 30px;
 }
 
-.detail-box .box .statistic-store .all {
+.detail-box .box-1 .statistic-store .all {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -45,14 +45,15 @@
   width: 100%;
 }
 
-.detail-box .box .statistic-store .content {
-  flex: 1;
-  background-color: rgb(255, 255, 255);
-  height: 300px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+@media (max-width: 992px) {
+  .detail-box .box-1 .statistic-store .all {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.detail-box .box .statistic-store .info {
+.detail-box .box-1 .statistic-store .info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,22 +61,122 @@
   gap: 20px;
 }
 
-.detail-box .box .statistic-store .info .detail-info:nth-child(1) span {
+
+
+.detail-box .box-1 .statistic-store .info .detail-info:nth-child(1) span {
   color: #b6be34;
   border-color: #b6be34;
 }
 
-.detail-box .box .statistic-store .info .detail-info:nth-child(2) span {
+.detail-box .box-1 .statistic-store .info .detail-info:nth-child(2) span {
   color: #10f1d1;
   border-color: #10f1d1;
 }
 
-.detail-box .box .statistic-store .info .detail-info:nth-child(3) span {
+.detail-box .box-1 .statistic-store .info .detail-info:nth-child(3) span {
   color: #b6be34;
   border-color: #b6be34;
 }
 
-.detail-box .box .statistic-store .info .detail-info:nth-child(4) span {
+.detail-box .box-1 .statistic-store .info .detail-info:nth-child(4) span {
   color: #10f1d1;
   border-color: #10f1d1;
+}
+
+.detail-box .box-1 .statistic-store .content {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 100%;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  height: 433px;
+  width: 100%;
+}
+
+.detail-box .box-1 .statistic-store .content h5 {
+  font-size: var(--heading-size-05);
+  font-weight: 600;
+  color: var(--main-color-01);
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+.detail-box .box-1 .statistic-store .content h6 {
+
+  font-size: var(--heading-size-05);
+  font-weight: 600;
+  color: var(--main-color-02);
+  margin-bottom: 0;
+  margin-right: 40px;
+}
+
+.detail-box .box-1 .content-order {
+  width: 100%;
+  background-color: var(--body-back);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.detail-box .box-1 .content-order .top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.detail-box .box-1 .content-order .top .info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.detail-box .box-1 .content-order .top .info h5 {
+  font-size: var(--heading-size-05);
+  font-weight: 600;
+  color: var(--main-color-01);
+  margin-right: 40px;
+}
+
+.detail-box .box-1 .content-order .top .info h6 {
+
+  font-size: var(--font-size-20);
+  font-weight: 600;
+  color: var(--main-color-01);
+  margin-right: 40px;
+}
+
+.detail-box .box-1 .content-order .stockChart {
+  /* height: calc(100% - 80px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* max-width: 600px;
+  margin: auto; */
+}
+
+.detail-box .box-1 .content-order canvas {
+  width: auto !important;
+}
+
+/* =========================== */
+@media (max-width: 992px) {
+  .detail-box .box-1 .statistic-store .all {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detail-box .box-1 .statistic-store .info {
+
+    width: 100%;
+  }
 }

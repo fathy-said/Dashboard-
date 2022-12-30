@@ -7,12 +7,13 @@ import { ArgBox, ChooseTime, DetailInfo } from "../index";
 import { BiMoney } from "react-icons/bi";
 import { FiCornerUpRight } from "react-icons/fi";
 import { FaShoppingBasket } from "react-icons/fa";
+import StockChart from "../StockChart/StockChart";
 
 const DetailBox = () => {
     return (
         <>
             <div className="detail-box col-10">
-                <div className="box">
+                <div className="box-1">
                     <div className="box-header">
                         <ArgBox
                             svg={<AiOutlineShop />}
@@ -35,7 +36,7 @@ const DetailBox = () => {
                     </div>
                     <div className="statistic-store">
                         <ChooseTime />
-                        <div className="all">
+                        <div className="all  ">
                             <div className="info">
                                 <DetailInfo
                                     name={"عدد المتاجر"}
@@ -60,8 +61,22 @@ const DetailBox = () => {
                             </div>
                             <div className="content">
                                 <h5>احصائيات المتاجر</h5>
+                                <h6>Avg. $5,309</h6>
+                                <StockChart />
                             </div>
                         </div>
+                    </div>
+
+                    <div className="content-order">
+                        <div className="top">
+                            <div className="info">
+                                <h5> احصائيات الطلبات</h5>
+                                <h6>250</h6>
+                            </div>
+                            <ChooseTime />
+                        </div>
+
+                        <StockChart />
                     </div>
                 </div>
             </div>
