@@ -160,3 +160,10 @@
   font-size: var(--font-size-20);
   color: var(--font-color-01);
 }
+
+@media (max-width: 768px) {
+  .header .content .row {
+    row-gap: 30px;
+  }
+
+}

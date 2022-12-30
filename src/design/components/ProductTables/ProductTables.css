@@ -8,14 +8,18 @@
 
 .product-tables table {
   margin: 0;
+  min-width: 500px;
+
 }
 
 .product-tables .box {
-
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
   flex: 1;
   background-color: var(--body-back);
   padding: 20px 0;
   border-radius: var(--border-radius);
+  overflow-x: auto;
+
 }
 
 .product-tables .box table tbody,

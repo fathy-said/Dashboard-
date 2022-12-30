@@ -17,108 +17,126 @@ import { ReactComponent as Svgsupport } from "../../assets/Icons/icon-24-support
 import { ReactComponent as Svgsetting } from "../../assets/Icons/icon-24-setting.svg";
 import { ReactComponent as Svgsign } from "../../assets/Icons/icon-24-sign out.svg";
 import { HiChevronLeft } from "react-icons/hi2";
+import { CgMenuRightAlt } from "react-icons/cg";
 
 const MenuBox = () => {
     const [dategate, setDategate] = useState(false);
+    const [menu, setMenu] = useState(false);
+
     return (
         <>
-            <div className="menu-box col-2">
+            {/* <div className="menu-box col-2"> */}
+            <div
+                className={
+                    menu === true ? "menu-box col-2 active" : "menu-box col-2"
+                }
+            >
                 <div className="box">
-                    <ul>
-                        <li>
-                            الرئيسية <HeadSvg />
-                        </li>
-                        <li>
-                            <HiChevronLeft className="trf" />
-                            السوق
-                            <BoxSvg />
-                        </li>
-                        <li>
-                            <HiChevronLeft className="trf" />
-                            المتاجر
-                            <MarkSvg />
-                        </li>
-                        <li>
-                            <HiChevronLeft className="trf" />
-                            الباقات <Svgprice />
-                        </li>
-                        <li>
-                            الخدمات
-                            <SvgCategory />
-                        </li>
-                        <li>
-                            أكاديمية اطلبها
-                            <Svgmanagement />
-                        </li>
-
-                        <li>
-                            القالب
-                            <Svgtemplate />
-                        </li>
-                        <li>
-                            الصفحات
-                            <Svgpages />
-                        </li>
-                        <li>
-                            المستخدمين
-                            <Svgclient />
-                        </li>
-                        <li>
-                            التسويق
-                            <Svgmarketing />
-                        </li>
-                        <div
-                            className={
-                                dategate == true ? "info active" : "info"
-                            }
-                        >
-                            <li
-                                onClick={(e) => {
-                                    setDategate(!dategate);
-                                }}
-                            >
+                    <div className="all">
+                        <ul>
+                            <li>
+                                الرئيسية <HeadSvg />
+                            </li>
+                            <li>
                                 <HiChevronLeft className="trf" />
-                                المندوبين
+                                السوق
+                                <BoxSvg />
+                            </li>
+                            <li>
+                                <HiChevronLeft className="trf" />
+                                المتاجر
+                                <MarkSvg />
+                            </li>
+                            <li>
+                                <HiChevronLeft className="trf" />
+                                الباقات <Svgprice />
+                            </li>
+                            <li>
+                                الخدمات
+                                <SvgCategory />
+                            </li>
+                            <li>
+                                أكاديمية اطلبها
+                                <Svgmanagement />
+                            </li>
+
+                            <li>
+                                القالب
+                                <Svgtemplate />
+                            </li>
+                            <li>
+                                الصفحات
+                                <Svgpages />
+                            </li>
+                            <li>
+                                المستخدمين
                                 <Svgclient />
                             </li>
-                            <div className="box">
-                                <li>
-                                    عرض المناديب<span></span>
+                            <li>
+                                التسويق
+                                <Svgmarketing />
+                            </li>
+                            <div
+                                className={
+                                    dategate == true ? "info active" : "info"
+                                }
+                            >
+                                <li
+                                    onClick={(e) => {
+                                        setDategate(!dategate);
+                                    }}
+                                >
+                                    <HiChevronLeft className="trf" />
+                                    المندوبين
+                                    <Svgclient />
                                 </li>
-                                <li>
-                                    حالة التسجيل <span></span>
-                                </li>
+                                <div className="box">
+                                    <li>
+                                        عرض المناديب<span></span>
+                                    </li>
+                                    <li>
+                                        حالة التسجيل <span></span>
+                                    </li>
+                                </div>
                             </div>
-                        </div>
 
-                        <li>
-                            <span></span>التصنيفات
-                            <SvgCategory />
-                        </li>
-                        <li>
-                            الطلبات
-                            <Svgsuper />
-                        </li>
-                        <li>
-                            المحفظة
-                            <Svgdollar />
-                        </li>
-                        <li>
-                            الدعم الفني
-                            <Svgsupport />
-                        </li>
-                        <li>
-                            الإعدادات
-                            <Svgsetting />
-                        </li>
-                    </ul>
-                    <div className="logOut">
-                        <span></span>
-                        <button>
-                            تسجيل خروج
-                            <Svgsign />
-                        </button>
+                            <li>
+                                <span></span>التصنيفات
+                                <SvgCategory />
+                            </li>
+                            <li>
+                                الطلبات
+                                <Svgsuper />
+                            </li>
+                            <li>
+                                المحفظة
+                                <Svgdollar />
+                            </li>
+                            <li>
+                                الدعم الفني
+                                <Svgsupport />
+                            </li>
+                            <li>
+                                الإعدادات
+                                <Svgsetting />
+                            </li>
+                        </ul>
+                        <div className="logOut">
+                            <span></span>
+                            <button>
+                                تسجيل خروج
+                                <Svgsign />
+                            </button>
+                        </div>
                     </div>
+                </div>
+                <div
+                    className="show-menu"
+                    onClick={() => {
+                        setMenu(!menu);
+                    }}
+                >
+                    <CgMenuRightAlt />
                 </div>
             </div>
         </>

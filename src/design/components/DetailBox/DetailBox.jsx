@@ -8,11 +8,13 @@ import { BiMoney } from "react-icons/bi";
 import { FiCornerUpRight } from "react-icons/fi";
 import { FaShoppingBasket } from "react-icons/fa";
 import StockChart from "../StockChart/StockChart";
+import ImgProportion from "../../assets/img/Screenshot 2022-12-30 190923.png";
+import ImgMap from "../../assets/img/Screenshot 2022-12-30 190708.png";
 
 const DetailBox = () => {
     return (
         <>
-            <div className="detail-box col-10">
+            <div className="detail-box  col-lg-10">
                 <div className="box-1">
                     <div className="box-header">
                         <ArgBox
@@ -76,6 +78,88 @@ const DetailBox = () => {
                         </div>
 
                         <StockChart />
+                    </div>
+                    <div className="statistic-box">
+                        <div className="row gap-4 gap-xl-0">
+                            <div className="box-right  col-xl-4">
+                                <div className="box">
+                                    <h6>إجمالي استخدام النظام</h6>
+                                    <div className="content">
+                                        <div className="box-img">
+                                            <img src={ImgProportion} alt="" />
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <h6>% 15 تابلت</h6>
+                                                <span></span>
+                                            </li>
+                                            <li>
+                                                <h6>% 35 لابتوب</h6>
+                                                <span></span>
+                                            </li>
+                                            <li>
+                                                <h6>% 50 موبايل</h6>
+                                                <span></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="box-left  col-xl-8">
+                                <div className="box">
+                                    <h5>المناطق الأكثر اشتراكاً</h5>
+                                    <div className="all">
+                                        <div className="box-img">
+                                            <img src={ImgMap} alt="" />
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <h6>
+                                                    الرياض
+                                                    <span></span>
+                                                </h6>
+                                                <span>$29,193</span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    جدة
+                                                    <span></span>
+                                                </h6>
+                                                <span>$18,832 </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    الدمام
+                                                    <span></span>
+                                                </h6>
+                                                <span>$19,758</span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    الأحساء
+                                                    <span></span>
+                                                </h6>
+                                                <span>$23,078 </span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    نجران
+                                                    <span></span>
+                                                </h6>
+                                                <span>$29,193</span>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    المدينة المنورة
+                                                    <span></span>
+                                                </h6>
+                                                <span>$760,37</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <ProductTables />
                 </div>
