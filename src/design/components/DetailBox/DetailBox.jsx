@@ -3,7 +3,7 @@ import "./DetailBox.css";
 import { GiStarFormation } from "react-icons/gi";
 import { AiOutlineUser, AiOutlineShop } from "react-icons/ai";
 
-import { ArgBox, ChooseTime, DetailInfo } from "../index";
+import { ArgBox, ChooseTime, DetailInfo, ProductTables } from "../index";
 import { BiMoney } from "react-icons/bi";
 import { FiCornerUpRight } from "react-icons/fi";
 import { FaShoppingBasket } from "react-icons/fa";
@@ -66,7 +66,6 @@ const DetailBox = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="content-order">
                         <div className="top">
                             <div className="info">
@@ -78,6 +77,7 @@ const DetailBox = () => {
 
                         <StockChart />
                     </div>
+                    <ProductTables />
                 </div>
             </div>
         </>

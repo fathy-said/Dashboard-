@@ -5,6 +5,7 @@ import MenuBox from "./MenuBox/MenuBox";
 import ArgBox from "./ArgBox/ArgBox";
 import ChooseTime from "./ChooseTime/ChooseTime";
 import DetailInfo from "./DetailInfo/DetailInfo";
+import ProductTables from "./ProductTables/ProductTables";
 
 export {
     FooterOverlay,
@@ -14,4 +15,5 @@ export {
     DetailInfo,
     ArgBox,
     ChooseTime,
+    ProductTables,
 };
