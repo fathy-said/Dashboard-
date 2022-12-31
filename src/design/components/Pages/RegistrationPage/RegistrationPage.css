@@ -7,7 +7,7 @@
 
 
 .registration-box .box {
-  height: 500px;
+  /* height: 500px; */
   background-color: var(--gray-color-03);
   width: 100%;
   padding: 40px 20px;
@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: start;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 
 }
 
@@ -116,4 +116,260 @@
 
 .registration-box .box .top ul li:nth-child(3) {
   background-color: var(--gray-color-02);
+}
+
+.registration-box .box .content {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.registration-box .box .content .title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  gap: 10px;
+  color: var(--font-color-02);
+  font-size: var(--heading-size-05);
+  font-weight: 500;
+  margin: 0 8px 20px 0;
+}
+
+.registration-box .box .content .title input {
+  margin-bottom: 2px;
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid var(--font-color-02);
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.registration-box .box .content table {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  min-width: 843px;
+}
+
+.registration-box .box .content table thead {
+  background-color: var(--gray-color-01);
+  border-radius: var(--border-radius);
+}
+
+
+.registration-box .box .content table thead tr th {
+  color: var(--main-color-01);
+  font-weight: 500;
+  font-size: var(--heading-size-06);
+}
+
+.registration-box .box .content table thead tr th:nth-child(3) {
+  text-align: center;
+
+}
+
+.registration-box .box .content table thead tr th:nth-child(4) span {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 10px;
+}
+
+/* =============== */
+.registration-box .box .content table tbody {}
+
+.registration-box .box .content table tbody tr {
+  border-bottom: 1px solid var(--gray-color-01);
+}
+
+.registration-box .box .content table tbody tr td {}
+
+.registration-box .box .content table tbody tr td span {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.registration-box .box .content table tbody tr td h6 {
+  margin: 0;
+}
+
+.registration-box .box .content table tbody tr td:nth-child(1) span {
+  gap: 10px;
+  color: var(--gray-color-04);
+  font-size: var(--heading-size-06);
+}
+
+.registration-box .box .content table tbody tr td:nth-child(1) span h6 {
+  color: var(--gray-color-04);
+  font-size: var(--heading-size-06);
+  font-weight: 500;
+}
+
+.registration-box .box .content table tbody tr td:nth-child(1) input {
+  margin-bottom: 2px;
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid var(--gray-color-02);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.registration-box .box .content table tbody tr td:nth-child(2) span {
+  gap: 10px;
+  color: var(--gray-color-04);
+  font-size: var(--heading-size-06);
+}
+
+.registration-box .box .content table tbody tr td:nth-child(3) span {
+  gap: 10px;
+  color: var(--gray-color-04);
+  font-size: var(--heading-size-06);
+  justify-content: center;
+}
+
+.registration-box .box .content table tbody tr td:nth-child(3) span h6 {
+  background-color: var(--gray-color-01);
+  color: var(--gray-color-04);
+  border-radius: 32px;
+  width: 105px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-box .box .content table tbody tr td:nth-child(3) span.sn h6 {
+  background-color: #b0f3c7;
+  color: var(--font-color-02);
+  border-radius: 32px;
+
+}
+
+.registration-box .box .content table tbody tr td:nth-child(4) span {
+  gap: 25px;
+  font-size: var(--heading-size-06);
+  justify-content: flex-end;
+  padding-left: 10px;
+
+}
+
+.registration-box .box .content table tbody tr td:nth-child(4) span svg {
+  cursor: pointer;
+
+}
+
+.registration-box .box table tbody,
+.registration-box .box table td,
+.registration-box .box table tfoot,
+.registration-box .box table thead,
+.registration-box .box table tr,
+.registration-box .box table th {
+  border: none;
+}
+
+/* ========footer======= */
+.registration-box .footer-info {
+  width: 100%;
+  position: relative;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-box .footer-info button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  padding: 10px 30px;
+  border: 2px solid var(--Primary-color-03);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+  font-size: var(--heading-size-06);
+  font-weight: 500;
+  color: var(--Primary-color-03);
+}
+
+.registration-box .footer-info button span {
+  width: 40px;
+  height: 40px;
+  background-color: var(--Primary-color-03);
+  color: var(--font-color-01);
+  transform: rotate(-90deg);
+  display: flex;
+  font-size: var(--font-size-20);
+
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+.registration-box .footer-info ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 5px;
+  margin: 0;
+}
+
+.registration-box .footer-info ul li {
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  color: var(--gray-color-04);
+  cursor: pointer;
+}
+
+.registration-box .footer-info ul li:nth-child(1) svg {
+  color: var(--gray-color-01);
+
+}
+
+.registration-box .footer-info ul li:nth-child(2) {
+  background-color: var(--Primary-color-03);
+  color: var(--font-color-01);
+}
+
+.registration-box .footer-info ul li:nth-child(3) {}
+
+.registration-box .footer-info ul li:nth-child(4) {}
+
+.registration-box .footer-info ul li:nth-child(5) {}
+
+.registration-box .footer-info ul li:nth-child(6) {
+  transform: rotate(180deg);
+  color: var(--font-color-02);
+}
+
+@media (max-width:768px) {
+  .registration-box .footer-info {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+
+  .registration-box .footer-info button {
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+
 }

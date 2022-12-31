@@ -182,3 +182,11 @@
 
   }
 }
+
+@media (max-width: 882px) {
+  .header .content .box-form input {
+
+    width: fit-content;
+
+  }
+}
