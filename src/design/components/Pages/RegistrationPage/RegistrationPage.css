@@ -176,13 +176,11 @@
 }
 
 /* =============== */
-.registration-box .box .content table tbody {}
 
 .registration-box .box .content table tbody tr {
   border-bottom: 1px solid var(--gray-color-01);
 }
 
-.registration-box .box .content table tbody tr td {}
 
 .registration-box .box .content table tbody tr td span {
   height: 50px;
@@ -349,11 +347,6 @@
   color: var(--font-color-01);
 }
 
-.registration-box .footer-info ul li:nth-child(3) {}
-
-.registration-box .footer-info ul li:nth-child(4) {}
-
-.registration-box .footer-info ul li:nth-child(5) {}
 
 .registration-box .footer-info ul li:nth-child(6) {
   transform: rotate(180deg);

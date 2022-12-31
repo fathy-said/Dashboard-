@@ -7,6 +7,7 @@ import ChooseTime from "./ChooseTime/ChooseTime";
 import DetailInfo from "./DetailInfo/DetailInfo";
 import ProductTables from "./ProductTables/ProductTables";
 import RegistrationPage from "./Pages/RegistrationPage/RegistrationPage";
+import UserPage from "./Pages/UserPage/UserPage";
 
 export {
     FooterOverlay,
@@ -18,4 +19,5 @@ export {
     ChooseTime,
     ProductTables,
     RegistrationPage,
+    UserPage,
 };

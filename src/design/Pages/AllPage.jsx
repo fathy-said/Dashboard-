@@ -1,6 +1,6 @@
 import React from "react";
-import { Home } from "./";
-import { Navbar, FooterOverlay } from "../components";
+import { Home, User } from "./";
+import { Navbar } from "../components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 const AllPage = () => {
     return (
@@ -9,8 +9,8 @@ const AllPage = () => {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/user" element={<User />} />
                 </Routes>
-                {/* <FooterOverlay /> */}
             </BrowserRouter>
         </>
     );

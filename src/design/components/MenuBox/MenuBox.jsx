@@ -10,7 +10,6 @@ import { ReactComponent as Svgtemplate } from "../../assets/Icons/icon-24-templa
 import { ReactComponent as Svgpages } from "../../assets/Icons/icon-24-pages.svg";
 import { ReactComponent as Svgclient } from "../../assets/Icons/icon-24- client.svg";
 import { ReactComponent as Svgmarketing } from "../../assets/Icons/icon-24-marketing.svg";
-import { ReactComponent as Svgdelivery } from "../../assets/Icons/icon-24-delivery.svg";
 import { ReactComponent as Svgsuper } from "../../assets/Icons/icon-24- super category.svg";
 import { ReactComponent as Svgdollar } from "../../assets/Icons/icon-24-dollar.svg";
 import { ReactComponent as Svgsupport } from "../../assets/Icons/icon-24-support.svg";
@@ -18,6 +17,7 @@ import { ReactComponent as Svgsetting } from "../../assets/Icons/icon-24-setting
 import { ReactComponent as Svgsign } from "../../assets/Icons/icon-24-sign out.svg";
 import { HiChevronLeft } from "react-icons/hi2";
 import { CgMenuRightAlt } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const MenuBox = ({ setRegistration, registration }) => {
     const [dategate, setDategate] = useState(false);
@@ -46,7 +46,7 @@ const MenuBox = ({ setRegistration, registration }) => {
 
                             <div
                                 className={
-                                    merchant == true ? "info active" : "info"
+                                    merchant === true ? "info active" : "info"
                                 }
                             >
                                 <li
@@ -108,17 +108,20 @@ const MenuBox = ({ setRegistration, registration }) => {
                                 الصفحات
                                 <Svgpages />
                             </li>
-                            <li>
-                                المستخدمين
-                                <Svgclient />
-                            </li>
+
+                            <Link to={"/user"}>
+                                <li>
+                                    المستخدمين
+                                    <Svgclient />
+                                </li>
+                            </Link>
                             <li>
                                 التسويق
                                 <Svgmarketing />
                             </li>
                             <div
                                 className={
-                                    dategate == true ? "info active" : "info"
+                                    dategate === true ? "info active" : "info"
                                 }
                             >
                                 <li

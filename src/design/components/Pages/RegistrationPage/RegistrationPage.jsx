@@ -8,7 +8,6 @@ import { ReactComponent as BackSvg } from "../../../assets/Icons/icon-30-arrwos 
 import { ReactComponent as GiftSvg } from "../../../assets/Icons/icon-26-gift.svg";
 import { ReactComponent as ClinicSvg } from "../../../assets/Icons/iocn-26-Clinic.svg";
 import { ReactComponent as SortSvg } from "../../../assets/Icons/icon-24-sort.svg";
-import { ReactComponent as TruggleSvg } from "../../../assets/Icons/truggle icon.svg";
 import { ReactComponent as SwitchSvg } from "../../../assets/Icons/icon-38-switch.svg";
 import { ReactComponent as DeleteSvg } from "../../../assets/Icons/icon-24-delete.svg";
 const RegistrationPage = ({ registration, setRegistration }) => {

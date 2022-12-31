@@ -3,9 +3,6 @@ import { DetailBox, MenuBox, RegistrationPage } from "../components";
 
 const Home = () => {
     const [registration, setRegistration] = useState(false);
-    // let registraionFun = (e) => {
-    //     setRegistraion(e);
-    // };
 
     return (
         <>
