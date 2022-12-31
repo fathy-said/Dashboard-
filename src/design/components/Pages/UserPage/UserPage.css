@@ -186,7 +186,7 @@
   align-items: flex-start;
   justify-content: start;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 
@@ -198,7 +198,7 @@
   align-items: flex-start;
   justify-content: start;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .user-box form .box-right select {
@@ -255,5 +255,10 @@
 
     flex-direction: column;
     padding-right: 20px;
+  }
+
+  .user-box form .box-left {
+
+    margin: 30px 0;
   }
 }
