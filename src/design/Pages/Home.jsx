@@ -1,27 +1,31 @@
 import React, { useState } from "react";
-import { DetailBox, MenuBox, RegistrationPage } from "../components";
+import { DetailBox } from "../components";
 
 const Home = () => {
-    const [registration, setRegistration] = useState(false);
+    // const [registration, setRegistration] = useState(false);
 
     return (
         <>
-            <div className="row Width 100% m-0">
-                <MenuBox
-                    setRegistration={setRegistration}
-                    registration={registration}
-                />
-                {registration ? (
-                    <RegistrationPage
-                        setRegistration={setRegistration}
-                        registration={registration}
-                    />
-                ) : (
-                    <DetailBox />
-                )}
-            </div>
+            <DetailBox />
         </>
     );
 };
 
 export default Home;
+
+{
+    /* <MenuBox
+    setRegistration={setRegistration}
+    registration={registration}
+/>
+{
+    registration ? (
+        <RegistrationPage
+            setRegistration={setRegistration}
+            registration={registration}
+        />
+    ) : (
+        <DetailBox />
+    )
+} */
+}

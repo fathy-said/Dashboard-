@@ -10,7 +10,9 @@ import { ReactComponent as ClinicSvg } from "../../../assets/Icons/iocn-26-Clini
 import { ReactComponent as SortSvg } from "../../../assets/Icons/icon-24-sort.svg";
 import { ReactComponent as SwitchSvg } from "../../../assets/Icons/icon-38-switch.svg";
 import { ReactComponent as DeleteSvg } from "../../../assets/Icons/icon-24-delete.svg";
-const RegistrationPage = ({ registration, setRegistration }) => {
+import { useNavigate } from "react-router-dom";
+const RegistrationPage = () => {
+    let navigate = useNavigate("");
     return (
         <>
             <div className="registration-box col-lg-10">
@@ -25,7 +27,7 @@ const RegistrationPage = ({ registration, setRegistration }) => {
                                 / حالة السجيل
                                 <span
                                     onClick={() => {
-                                        setRegistration(!registration);
+                                        navigate("/");
                                     }}
                                 >
                                     الرئيسية

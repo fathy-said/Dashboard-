@@ -17,12 +17,13 @@ import { ReactComponent as Svgsetting } from "../../assets/Icons/icon-24-setting
 import { ReactComponent as Svgsign } from "../../assets/Icons/icon-24-sign out.svg";
 import { HiChevronLeft } from "react-icons/hi2";
 import { CgMenuRightAlt } from "react-icons/cg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const MenuBox = ({ setRegistration, registration }) => {
+const MenuBox = () => {
     const [dategate, setDategate] = useState(false);
     const [merchant, setMerchant] = useState(false);
     const [menu, setMenu] = useState(false);
+    let navigate = useNavigate("");
 
     return (
         <>
@@ -67,24 +68,13 @@ const MenuBox = ({ setRegistration, registration }) => {
                                         المتاجر
                                         <span></span>
                                     </li>
-                                    {registration === true ? (
-                                        <li
-                                            className="active"
-                                            onClick={() => {
-                                                setRegistration(!registration);
-                                            }}
-                                        >
-                                            حالة التسجيل <span></span>
-                                        </li>
-                                    ) : (
-                                        <li
-                                            onClick={() => {
-                                                setRegistration(!registration);
-                                            }}
-                                        >
-                                            حالة التسجيل <span></span>
-                                        </li>
-                                    )}
+                                    <li
+                                        onClick={() =>
+                                            navigate("/registration")
+                                        }
+                                    >
+                                        حالة التسجيل <span></span>
+                                    </li>
                                 </div>
                             </div>
                             <li>

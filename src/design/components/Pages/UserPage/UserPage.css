@@ -1,11 +1,12 @@
 .user-box {
-  position: relative;
-  background-color: rgba(4, 4, 4, 0.713);
+  position: absolute;
+  background-color: rgba(4, 4, 4, 0.812);
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
+  padding: 0 !important;
 }
 
 .user-box .box-1 {
