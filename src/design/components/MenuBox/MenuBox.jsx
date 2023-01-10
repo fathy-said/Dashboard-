@@ -40,6 +40,9 @@ const MenuBox = () => {
                                 الرئيسية <HeadSvg />
                             </li>
                             <li>
+                                الرئيسية <HeadSvg />
+                            </li>
+                            <li>
                                 <HiChevronLeft className="trf" />
                                 السوق
                                 <BoxSvg />
